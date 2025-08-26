@@ -1,12 +1,14 @@
-import = [
+general.import = [
     "~/.config/alacritty/themes/themes/solarized_dark.toml"
 ]
 
 [font]
 size = 14.0
+builtin_box_drawing = true
 
 [font.normal]
-family = "Hack Nerd Font"
+#family = "Hack Nerd Font"
+family = "Maple Mono NF CN"
 
 [window]
 decorations = "Full"
@@ -19,3 +21,11 @@ lines = 50
 
 [scrolling]
 history = 50000
+
+[keyboard]
+bindings = [
+    # 绑定 PageUp 为向上翻页
+    { key = "PageUp", action = "ScrollPageUp" },
+    # 绑定 PageDown 为向下翻页
+    { key = "PageDown", action = "ScrollPageDown" },
+]
